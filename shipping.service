@@ -3,7 +3,7 @@ Description=Shipping Service
 
 [Service]
 User=roboshop
-Environment=CART_ENDPOINT=cart.jcglobalit.online:8080
+Environment=CART_ENDPOINT=cart.app.jcglobalit.online:80
 Environment=DB_HOST=mysql.jcglobalit.online
 ExecStart=/bin/java -jar /app/shipping.jar
 SyslogIdentifier=shipping

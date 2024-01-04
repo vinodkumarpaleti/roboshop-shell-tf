@@ -21,8 +21,7 @@ do
     echo "created $i instance: $IP_ADDRESS"
     #ec2 run-instances --image-id ami-03265a0778a880afb --instance-type t2.micro --security-group-ids sg-079bfb9b54023a1c5
 
-aws 
-    aws route53 change-resource-record-sets --hosted-zone-id Z02954502A6LVQUVQ4MZL --change-batch '
+    aws route53 change-resource-record-sets --hosted-zone-id $HOSTED_ZONE_ID --change-batch '
     {
             "Changes": [{
             "Action": "CREATE",
